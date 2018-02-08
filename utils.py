@@ -44,11 +44,11 @@ def gpyramid(img_array, downscale=2, max_levels=-1):
                         downscale=downscale))
     return gpyramid
 
-def show_img(img_array):
+def show_img(*args,**kwargs):
     """
         args
             img_array : ndarray
     """
     fig, ax = plt.subplots()
-    ax.imshow(img_array)
+    ax.imshow(*args,**kwargs)
     plt.show()
